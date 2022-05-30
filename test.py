@@ -7,7 +7,7 @@ valid_words = set(words)
 
 solution = choice(words)
 attempt = 0
-while attempt < 6:
+while attempt < 5:
     guess = input("Enter a word: ").upper()
 
     if len(guess) != 5:
@@ -24,7 +24,6 @@ while attempt < 6:
 
     if guess == solution:
         print(colored(guess, "green"))
-        print(f'You guessed the word in {attempt + 1} attempts.')
         break
 
     attempt += 1
